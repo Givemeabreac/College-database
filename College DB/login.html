@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <div class="container">
+        <center> <h1>LOGIN</h1></center>
+         <form action="login_check.php" method="POST" name="log in" class="login-form">
+           <div class="form-row">
+             <label for="name">Name:</label>
+             <input type="text" name="name" id="name" placeholder="your name" required>
+           </div>
+           <div class="form-row">
+             <label for="email">Email:</label>
+             <input type="text" name="email" id="email" placeholder="your email" value="@gmail.com" required>
+           </div>
+           <div class="form-row">
+            <label for="Id">Id:</label>
+            <input type="text" id="Id" name="id" placeholder="your Id" required>
+          </div>
+           <div class="form-row">
+             <label for="password">Password:</label>
+             <input type="password" name="password" required>
+           </div>
+           <div class="form-row">
+             <input type="submit" class="submit" value="Login" />
+           </div>
+         </form>
+       </div>
+       
+
+</body>
+</html>

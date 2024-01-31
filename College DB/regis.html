@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="regis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <div class="container">
+        <center> <h1>Registration Form</h1></center>
+         <form action="data_check.php" method="POST" name="registration" class="registartion-form" onsubmit="return confirmSubmission()">
+           <div class="form-row">
+             <label for="name">Name:</label>
+             <input type="text" name="name" id="name" placeholder="your name" required>
+           </div>
+           <div class="form-row">
+             <label for="email">Email:</label>
+             <input type="text" name="email" id="email" placeholder="your email" value="@gmail.com" required>
+           </div>
+           <div class="form-row">
+             <label for="Id">Id:</label>
+             <input type="text" name="id" id="Id" placeholder="your ID" required>
+           </div>
+
+           <div class="form-row">
+             <label>Phone Number:</label>
+             <div>
+               <select style="margin-right: 5px; width: 55px;" required>
+                 <option value="+880">+880 (Bangladesh) </option>
+                 <option value="+1">+1 (United States)</option>
+                 <option value="+44">+44 (United Kingdom)</option>
+                 <option value="+91">+91 (India)</option>
+                 <option value="+86">+86 (China)</option>
+                 <option value="+81">+81 (Japan)</option>
+                 <option value="+971">+971 (United Arab Emirates)</option>
+               </select>
+               <input type="text" name="phone" placeholder="your phone number" title="Please enter a valid phone number (digits only)"  required>
+             </div>
+           </div>
+           <div class="form-row">
+             <label>Gender:</label>
+             <input type="radio" name="gender" id="male" value="male" required>
+             <label for="male">Male</label>
+             <input type="radio" name="gender" id="female" value="female">
+             <label for="female">Female</label>
+             <input type="radio" name="gender" id="other" value="other">
+             <label for="other">Other</label>
+           </div>
+           <div  class="form-row">
+             <label>Language:</label>
+             <select name="language" style="width: 170px;" required>
+               <option value="">Select language</option>
+               <option value="English">English</option>
+               <option value="Spanish">Spanish</option>
+               <option value="Bangla">Bangla</option>
+               <option value="Arabic">Arabic</option>
+               <option value="Russian">Russian</option>
+             </select>
+             
+           </div>
+           <div class="form-row">
+             <label for="Password">Password:</label>
+             <input type="password" name="password">
+           </div>
+           <div class="form-row">
+             <input name="apply" type="submit" class="submit" value="Register" />
+           </div>
+
+         </form>
+       </div>
+       
+    <script>
+      function confirmSubmission() {
+        var confirmation = confirm("Are you sure you want to submit this registration?");
+        return confirmation;
+      }
+    </script>
+    
+</body>
+</html>
+</body>
+</html>
